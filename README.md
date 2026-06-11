@@ -45,6 +45,11 @@ generated images. Add these keys to your app's **Info.plist**:
 
 ## Quick start
 
+Token generation is **owned by your app** — the SDK ships no credentials and
+never calls a token endpoint itself. Your app fetches the initial token at
+launch and passes it in; whenever a request later gets a `403`, the SDK calls
+back for a fresh token and automatically retries the failed request.
+
 ### 1. Conform to `EveryAITokenHandler`
 
 The SDK calls `didReceiveTokenError()` whenever the bearer token is invalid or
@@ -54,16 +59,19 @@ expired (e.g. a `403`). Return a fresh token so operations continue.
 import EveryAI
 
 final class TokenGenerator: EveryAITokenHandler {
+    // 403 callback: return a fresh token; the SDK retries the failed request.
     func didReceiveTokenError() async throws -> String {
-        return try await requestNewToken()   // your token-refresh logic
+        return try await fetchToken()
     }
-    private func requestNewToken() async throws -> String { "new_bearer_token" }
+    // Also used at launch to seed the initial token. Replace with your backend.
+    func fetchToken() async throws -> String { "bearer_token_from_your_backend" }
 }
 ```
 
 ### 2. Create an `EveryAIManager` and present the chat
 
-The SDK works with both SwiftUI and UIKit hosts.
+Fetch a token first, then create the manager with it. The SDK works with both
+SwiftUI and UIKit hosts.
 
 **SwiftUI**
 
@@ -73,21 +81,26 @@ import EveryAI
 
 struct ContentView: View {
     private let tokenHandler = TokenGenerator()
-    private let manager: EveryAIManager
-
-    init() {
-        #if DEBUG
-        manager = EveryAIManager(token: "", tokenHandler: tokenHandler, env: .dev)
-        #else
-        manager = EveryAIManager(token: "", tokenHandler: tokenHandler, env: .prod)
-        #endif
-    }
+    @State private var manager: EveryAIManager?
 
     var body: some View {
         NavigationView {
-            NavigationLink("AI Chat") {
-                manager.view(.aiChat)
+            if let manager {
+                NavigationLink("AI Chat") {
+                    manager.view(.aiChat)
+                }
+            } else {
+                ProgressView()
             }
+        }
+        .task {
+            guard manager == nil,
+                  let token = try? await tokenHandler.fetchToken() else { return }
+            #if DEBUG
+            manager = EveryAIManager(token: token, tokenHandler: tokenHandler, env: .dev)
+            #else
+            manager = EveryAIManager(token: token, tokenHandler: tokenHandler, env: .prod)
+            #endif
         }
     }
 }
@@ -101,9 +114,18 @@ import EveryAI
 
 final class ViewController: UIViewController {
     private let tokenHandler = TokenGenerator()
-    private lazy var manager = EveryAIManager(token: "", tokenHandler: tokenHandler, env: .dev)
+    private var manager: EveryAIManager?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        Task {
+            guard let token = try? await tokenHandler.fetchToken() else { return }
+            manager = EveryAIManager(token: token, tokenHandler: tokenHandler, env: .dev)
+        }
+    }
 
     @IBAction func openChat(_ sender: Any) {
+        guard let manager else { return }
         navigationController?.pushViewController(manager.hostingController(.aiChat), animated: true)
     }
 }
