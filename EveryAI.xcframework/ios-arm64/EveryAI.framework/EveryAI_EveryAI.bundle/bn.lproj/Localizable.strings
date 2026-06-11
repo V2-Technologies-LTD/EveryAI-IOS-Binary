@@ -1,0 +1,102 @@
+/* App */
+"app_name" = "EveryAI";
+"every_ai_chat" = "রবি এআই চ্যাট";
+
+/* ChatInputBox */
+"composer_hint" = "একটি নতুন বার্তা শুরু করুন...";
+"action_upload_file" = "ফাইল আপলোড করুন";
+"action_upload_image" = "ছবি আপলোড করুন";
+"action_create_image" = "ছবি তৈরি করুন";
+"error_max_file_selection" = "আপনি সর্বোচ্চ ফাইল নির্বাচনের সীমায় পৌঁছে গেছেন";
+"error_max_file_exceeded" = "সর্বোচ্চ ফাইলের সীমা অতিক্রান্ত";
+"error_image_gen_unavailable" = "ছবি তৈরির মডেল এখন উপলব্ধ নেই";
+"label_image_upload" = "ছবি আপলোড";
+"label_file_upload" = "ফাইল আপলোড";
+"toast_internet_not_available" = "ইন্টারনেট সংযোগ নেই!";
+"toast_model_not_available" = "মডেল এখন উপলব্ধ নেই";
+"toast_please_type_something" = "অনুগ্রহ করে কিছু টাইপ করুন বা যোগ করুন";
+
+/* ChatHistory */
+"upload_failed_title" = "আপলোড ব্যর্থ হয়েছে";
+"upload_failed_want_retry" = "আবার চেষ্টা করতে চান?";
+"btn_retry" = "আবার চেষ্টা করুন";
+"btn_cancel" = "বাতিল";
+"toast_copied_to_clipboard" = "ক্লিপবোর্ডে কপি হয়েছে";
+"ai_thinking" = "EveryAI ভাবছে ...";
+"empty_chat_greeting" = "হ্যালো! আপনি কেমন আছেন?";
+"image_downloaded_successfully" = "ছবি সফলভাবে ডাউনলোড হয়েছে";
+"toast_permission_denied" = "অনুমতি দেওয়া হয়নি";
+"error_image_url_invalid" = "ছবির URL অবৈধ।";
+
+/* AppDrawer */
+"drawer_title" = "রবি চ্যাট এআই";
+"btn_new_chat" = "নতুন চ্যাট";
+"label_recent_chat" = "সাম্প্রতিক চ্যাট";
+"label_no_recent_chats" = "কোনো সাম্প্রতিক চ্যাট নেই";
+"dialog_rename_chat_title" = "চ্যাটের নাম পরিবর্তন করুন";
+"btn_save" = "সংরক্ষণ";
+"dialog_delete_chat_title" = "চ্যাট মুছুন";
+"delete_chat_cannot_undo" = "এটি পূর্বাবস্থায় ফেরানো যাবে না।";
+"btn_no" = "না";
+"btn_delete" = "মুছুন";
+"label_rename" = "নাম পরিবর্তন";
+"label_delete" = "মুছুন";
+"label_light_mode" = "লাইট মোড";
+"label_dark_mode" = "ডার্ক মোড";
+"language" = "ভাষা";
+"title_new_chat" = "নতুন চ্যাট";
+
+/* EveryAIModelBottomSheet */
+"model_picker_title" = "এআই মডেল নির্বাচন করুন";
+"search_models_hint" = "মডেল অনুসন্ধান করুন";
+"model_switching_note" = "এআই মডেল পরিবর্তন করলে ভিন্ন টোকেন চার্জ প্রযোজ্য হতে পারে";
+"no_model_available" = "কোনো মডেল উপলব্ধ নেই";
+"toast_select_parent_model" = "অনুগ্রহ করে একটি প্যারেন্ট মডেল নির্বাচন করুন";
+"toast_select_child_model" = "অনুগ্রহ করে একটি চাইল্ড মডেল নির্বাচন করুন";
+"btn_apply" = "প্রয়োগ করুন";
+"btn_reset" = "পুনরায় সেট করুন";
+
+/* EveryAIBundleBottomSheet */
+"bundle_title" = "EVERYAI প্রিমিয়াম";
+"bundle_subtitle" = "উন্নত বুদ্ধিমত্তা ও এজেন্টের সাথে আরো বেশি অ্যাক্সেস পান।";
+"no_internet_available_message" = "ইন্টারনেট সংযোগ নেই। আপনার নেটওয়ার্ক সেটিংস চেক করে আবার চেষ্টা করুন।";
+
+/* TokenDetailSheet */
+"token_details_title" = "টোকেন বিবরণ";
+"token_prompt_used" = "প্রম্পট টোকেন ব্যবহৃত";
+"token_response_used" = "রেসপন্স টোকেন ব্যবহৃত";
+"token_total_used" = "মোট টোকেন ব্যবহৃত";
+"token_time_used" = "সময় ব্যবহৃত";
+"token_credits_note" = "ক্রেডিট ব্যবহারের হিসাব আনুমানিক। প্রতিটি মডেল ও কথোপকথনে ব্যবহৃত সঠিক ক্রেডিটের জন্য, দেখুন ";
+"token_terms_link" = "শর্তাবলী ও নীতিমালা";
+"token_terms_suffix" = " পৃষ্ঠা।";
+
+/* EveryAIAiScreen */
+"toast_token_limit_reached" = "টোকেনের সীমা শেষ। এখন মডেল পরিবর্তন করা যাবে না।";
+
+/* PurchaseHistory */
+"history_screen_title" = "টোকেনের ইতিহাস";
+"purchase_history_empty" = "এখানে এখনো কোনো তথ্য নেই";
+"label_total_token" = "মোট টোকেন";
+"label_token_left" = "বাকি টোকেন";
+"label_current_plan" = "বর্তমান সাবস্ক্রিপশন প্ল্যান";
+"label_purchase_history" = "ক্রয়ের ইতিহাস";
+
+/* RetryDialog */
+"retry_dialog_title" = "আবার চেষ্টা করুন";
+"btn_try_again_later" = "পরে আবার চেষ্টা করুন";
+
+/* FileSuccessDialog */
+"btn_close" = "বন্ধ করুন";
+
+/* iOS-only keys (no Android equivalent) */
+"btn_ok" = "ঠিক আছে";
+"alert_limit_reached_title" = "সীমা শেষ";
+"alert_attachment_limit_title" = "সংযুক্তির সীমা";
+"alert_download_title" = "ডাউনলোড";
+"rename_placeholder" = "নাম লিখুন...";
+"label_free" = "ফ্রি ";
+"label_days" = " দিন";
+"get_package_format" = "%@ নিন";
+"label_validity_till" = "মেয়াদ - ";
+"label_token_unit" = " টোকেন";

@@ -1,0 +1,157 @@
+
+{
+    "user_id": "1946094342",
+    "tokens_remaining": 0,
+    "monthly_allocation": -1,
+    "allocated_tokens": 318036,
+    "consumed_tokens": 318111,
+    "premium_balance": 0,
+    "subscription_tier": "free",
+    "fallback_available": false,
+    "service_status": "available",
+    "available_models": [
+        {
+            "model_name": "ChatGPT",
+            "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/OpenAI-white-monoblossom.png",
+            "child_models": [
+                {
+                    "model_id": "gpt-4.1-mini",
+                    "model_name": "GPT-4.1 Mini",
+                    "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/OpenAI-white-monoblossom.png",
+                    "cost_multiplier": 1.0,
+                    "is_active": true,
+                    "description": "OpenAI GPT-4.1 Mini - High quality, 2x token cost"
+                },
+                {
+                    "model_id": "gpt-4.1",
+                    "model_name": "GPT-4.1",
+                    "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/OpenAI-white-monoblossom.png",
+                    "cost_multiplier": 2.0,
+                    "is_active": true,
+                    "description": "OpenAI GPT-4.1 - Full version, ideal for reasoning and writing"
+                },
+                {
+                    "model_id": "gpt-3.5-turbo",
+                    "model_name": "GPT-3.5 Turbo",
+                    "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/OpenAI-white-monoblossom.png",
+                    "cost_multiplier": 0.5,
+                    "is_active": true,
+                    "description": "OpenAI GPT-3.5 Turbo - Fast and cost-efficient"
+                },
+                {
+                    "model_id": "gpt-4.1-mini-1",
+                    "model_name": "GPT-4.1 Mini",
+                    "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/OpenAI-white-monoblossom.png",
+                    "cost_multiplier": 1.0,
+                    "is_active": true,
+                    "description": "OpenAI GPT-4.1 Mini - High quality, 2x token cost"
+                },
+                {
+                    "model_id": "gpt-4.1-1",
+                    "model_name": "GPT-4.1",
+                    "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/OpenAI-white-monoblossom.png",
+                    "cost_multiplier": 2.0,
+                    "is_active": true,
+                    "description": "OpenAI GPT-4.1 - Full version, ideal for reasoning and writing"
+                },
+                {
+                    "model_id": "gpt-3.5-turbo-1",
+                    "model_name": "GPT-3.5 Turbo",
+                    "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/OpenAI-white-monoblossom.png",
+                    "cost_multiplier": 0.5,
+                    "is_active": true,
+                    "description": "OpenAI GPT-3.5 Turbo - Fast and cost-efficient"
+                }
+            ]
+        },
+        {
+            "model_name": "DeepSeek",
+            "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/Adobe+Express+-+file.png",
+            "child_models": [
+                {
+                    "model_id": "deepseek-r1",
+                    "model_name": "DeepSeek R1",
+                    "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/Adobe+Express+-+file.png",
+                    "cost_multiplier": 2.0,
+                    "is_active": true,
+                    "description": "DeepSeek R1 - Cost-effective, 0.7x token cost"
+                },
+                {
+                    "model_id": "deepseek-chat",
+                    "model_name": "DeepSeek Chat",
+                    "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/Adobe+Express+-+file.png",
+                    "cost_multiplier": 1.2,
+                    "is_active": true,
+                    "description": "Conversational model optimized for natural interactions"
+                }
+            ]
+        },
+        {
+            "model_name": "Claude",
+            "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/claude_icon.png",
+            "child_models": [
+                {
+                    "model_id": "claude-3-opus",
+                    "model_name": "Claude 3 Opus",
+                    "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/claude_icon.png",
+                    "cost_multiplier": 2.5,
+                    "is_active": true,
+                    "description": "Anthropic Claude 3 Opus - Premium reasoning model"
+                },
+                {
+                    "model_id": "claude-3-sonnet",
+                    "model_name": "Claude 3 Sonnet",
+                    "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/claude_icon.png",
+                    "cost_multiplier": 1.5,
+                    "is_active": true,
+                    "description": "Balanced and fast variant of Claude 3"
+                }
+            ]
+        },
+        {
+            "model_name": "Gemini",
+            "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/gemini_icon.png",
+            "child_models": [
+                {
+                    "model_id": "gemini-1.5-pro",
+                    "model_name": "Gemini 1.5 Pro",
+                    "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/gemini_icon.png",
+                    "cost_multiplier": 1.8,
+                    "is_active": true,
+                    "description": "Google Gemini 1.5 Pro - Strong multimodal reasoning"
+                },
+                {
+                    "model_id": "gemini-1.5-flash",
+                    "model_name": "Gemini 1.5 Flash",
+                    "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/gemini_icon.png",
+                    "cost_multiplier": 1.0,
+                    "is_active": true,
+                    "description": "Lightweight version of Gemini with faster performance"
+                }
+            ]
+        },
+        {
+            "model_name": "Mistral",
+            "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/mistral_icon.png",
+            "child_models": [
+                {
+                    "model_id": "mistral-7b",
+                    "model_name": "Mistral 7B",
+                    "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/mistral_icon.png",
+                    "cost_multiplier": 0.8,
+                    "is_active": true,
+                    "description": "Open-source lightweight reasoning model"
+                },
+                {
+                    "model_id": "mixtral-8x7b",
+                    "model_name": "Mixtral 8x7B",
+                    "model_icon": "https://ppol-web-uploads.s3.ap-southeast-1.amazonaws.com/startrek/icon/mistral_icon.png",
+                    "cost_multiplier": 1.2,
+                    "is_active": true,
+                    "description": "Mixture of experts model from Mistral AI"
+                }
+            ]
+        }
+    ]
+}
+

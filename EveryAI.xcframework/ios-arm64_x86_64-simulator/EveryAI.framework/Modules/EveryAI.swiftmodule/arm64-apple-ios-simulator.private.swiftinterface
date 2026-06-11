@@ -1,0 +1,250 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name EveryAI -package-name robi_ai_ios
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import Combine
+import DeveloperToolsSupport
+import Foundation
+import Foundation/*.Bundle*/
+import Foundation/*.ProcessInfo*/
+import Foundation/*.URL*/
+import Network
+import OSLog
+import Photos
+import PhotosUI
+import Swift
+import SwiftUI
+import UIKit
+import UniformTypeIdentifiers
+import WebKit
+import _Concurrency
+import _PhotosUI_SwiftUI
+import _StringProcessing
+import _SwiftConcurrencyShims
+import _WebKit_SwiftUI
+@_Concurrency.MainActor @preconcurrency public struct ThemedSVGImage : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(_ name: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7EveryAI14ThemedSVGImageV4bodyQrvp", 0) __
+}
+extension SwiftUICore.Color {
+  public init(hex: Swift.String)
+  public static let greenText: SwiftUICore.Color
+  public static let orangeText: SwiftUICore.Color
+  public static let purpleBg: SwiftUICore.Color
+  public static let yellowText: SwiftUICore.Color
+  public static let redText: SwiftUICore.Color
+  public static let orangeMaroonText: SwiftUICore.Color
+  public static let blackBG: SwiftUICore.Color
+  public static let redBG: SwiftUICore.Color
+  public static let maroonText: SwiftUICore.Color
+  public static let chatHeaderItemsDark: SwiftUICore.Color
+  public static let chatHeaderItemsLight: SwiftUICore.Color
+  public static let sidebarBG: SwiftUICore.Color
+  public static let redGradient: SwiftUICore.Color
+  public static let purpleGradient: SwiftUICore.Color
+  public static let redAlertText: SwiftUICore.Color
+  public static let deepRed: SwiftUICore.Color
+  public static let redBg: SwiftUICore.Color
+  public static let redDark: SwiftUICore.Color
+  public static let grayBorder: SwiftUICore.Color
+}
+extension SwiftUICore.Image {
+  public static var crossRound: SwiftUICore.Image {
+    get
+  }
+}
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func topSafeAreaInset(withOffset offset: CoreFoundation.CGFloat = 0) -> CoreFoundation.CGFloat
+}
+public struct TokenTransactionsResponse : Swift.Codable {
+  public let transactions: [EveryAI.TokenTransaction]
+  public let total: Swift.Int
+  public let limit: Swift.Int
+  public let offset: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TokenTransaction : Swift.Codable, Swift.Identifiable, Swift.Hashable {
+  public var id: Swift.String {
+    get
+  }
+  public let paymentID: Swift.String
+  public let date: Swift.String
+  public let packageName: Swift.String
+  public let amountBDT: Swift.Float
+  public let tokens: Swift.Int
+  public let status: Swift.String
+  public let tokenStatus: Swift.String
+  public let type: Swift.String
+  public let validityDays: Swift.Int
+  public let effectiveExpiry: Swift.String
+  public let expiresInDays: Swift.Int?
+  public static func == (a: EveryAI.TokenTransaction, b: EveryAI.TokenTransaction) -> Swift.Bool
+  public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+
+@_Concurrency.MainActor @preconcurrency public struct SubscriptionPurchaseHisotryView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7EveryAI31SubscriptionPurchaseHisotryViewV4bodyQrvp", 0) __
+}
+public struct Token : Swift.Codable {
+  public let token: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TokenData : Swift.Codable {
+  public let message: Swift.String
+  public let data: EveryAI.Token
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum EveryAIEnv {
+  case dev
+  case prod
+  case test
+  public static func == (a: EveryAI.EveryAIEnv, b: EveryAI.EveryAIEnv) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum EveryAIView : Swift.String, Swift.CaseIterable {
+  case aiChat
+  public static let all: [EveryAI.EveryAIView]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [EveryAI.EveryAIView]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [EveryAI.EveryAIView] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol EveryAITokenHandler : AnyObject {
+  func didReceiveTokenError() async throws -> Swift.String
+}
+public protocol EveryAISubscriptionPurchaseHandler : AnyObject {
+  func didReceivePurchaseInfo(response: [Swift.String : Swift.String], viewType: EveryAI.EveryAIView)
+}
+final public class EveryAIManager {
+  public init(token: Swift.String, tokenHandler: any EveryAI.EveryAITokenHandler, env: EveryAI.EveryAIEnv)
+  final public func setPaymentDelegate(_ delegate: any EveryAI.EveryAISubscriptionPurchaseHandler)
+  @objc deinit
+}
+extension EveryAI.EveryAIManager {
+  @_Concurrency.MainActor final public func hostingController(_ view: EveryAI.EveryAIView) -> SwiftUI.UIHostingController<some SwiftUICore.View>
+  
+  final public func dismissView()
+  @_Concurrency.MainActor final public func view(_ view: EveryAI.EveryAIView) -> some SwiftUICore.View
+  
+}
+final public class EveryAITokenGenerator : EveryAI.EveryAITokenHandler {
+  public init()
+  final public func didReceiveTokenError() async throws -> Swift.String
+  @objc deinit
+}
+public struct ServiceErrorData : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ServiceErrorDetail : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum PurchaseListPreviewData {
+  public static func getResponse(offset: Swift.Int, limit: Swift.Int) -> EveryAI.TokenTransactionsResponse
+  public static let activeTransactions: [EveryAI.TokenTransaction]
+}
+public struct MockDataBuilder {
+  public static func buildFrom<T>(bundle: Foundation.Bundle, fileName: Swift.String) -> T where T : Swift.Decodable
+}
+public enum HTTPMethod : Swift.String {
+  case GET
+  case POST
+  case PUT
+  case PATCH
+  case DELETE
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct URLRequestBuilder {
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func createRequestWith(baseURL: Swift.String, httpMethod: EveryAI.HTTPMethod? = .GET, params: [Swift.String : Swift.String]? = nil, headers: [Swift.String : Swift.String]? = nil, body: [Swift.String : Any]? = nil, bearerToken: Swift.String? = nil) -> Foundation.URLRequest?
+  #endif
+}
+@objc public class HTTPClient : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(timeoutRequestInterval: Swift.Double? = 180, timeoutResourceInterval: Swift.Double? = nil, tokenHandler: (any EveryAI.EveryAITokenHandler)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func register(_ defaultHeaders: [Swift.String : Swift.String]? = nil)
+  #endif
+  @objc deinit
+}
+extension EveryAI.HTTPClient : EveryAI.WebService {
+  public func send(_ request: Foundation.URLRequest) async throws -> (Foundation.Data, Foundation.URLResponse)
+  public func executeNoContent(request: Foundation.URLRequest) async throws -> Swift.Int
+  public func execute<T>(request: Foundation.URLRequest) async throws -> (T, Swift.Int) where T : Swift.Decodable, T : Swift.Encodable
+  public func decode<T>(type: T.Type, from data: Foundation.Data) throws -> T where T : Swift.Decodable
+  public func decode<T>(type: T.Type, from data: [Swift.String : Any]) throws -> T where T : Swift.Decodable
+  public func cancel()
+}
+public enum HTTPServiceError : Swift.Error {
+  case serviceNotFound
+  case badURL
+  case noDataFound
+  case invalidResponse
+  case invalidJson
+  case noInternet
+  case sessionNotConfigured
+  case cancelled
+  case timeout
+  case unAuthorized
+  case jsonDecoding
+  case invalidToken
+  case apiError(detail: EveryAI.ServiceErrorDetail)
+}
+extension EveryAI.HTTPServiceError : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+public protocol WebService {
+  func execute<T>(request: Foundation.URLRequest) async throws -> (T, Swift.Int) where T : Swift.Decodable, T : Swift.Encodable
+  func executeNoContent(request: Foundation.URLRequest) async throws -> Swift.Int
+  func send(_ request: Foundation.URLRequest) async throws -> (Foundation.Data, Foundation.URLResponse)
+  func decode<T>(type: T.Type, from data: Foundation.Data) throws -> T where T : Swift.Decodable
+  func decode<T>(type: T.Type, from data: [Swift.String : Any]) throws -> T where T : Swift.Decodable
+}
+extension EveryAI.ThemedSVGImage : Swift.Sendable {}
+extension EveryAI.SubscriptionPurchaseHisotryView : Swift.Sendable {}
+extension EveryAI.EveryAIEnv : Swift.Equatable {}
+extension EveryAI.EveryAIEnv : Swift.Hashable {}
+extension EveryAI.EveryAIView : Swift.Equatable {}
+extension EveryAI.EveryAIView : Swift.Hashable {}
+extension EveryAI.EveryAIView : Swift.RawRepresentable {}
+extension EveryAI.HTTPMethod : Swift.Equatable {}
+extension EveryAI.HTTPMethod : Swift.Hashable {}
+extension EveryAI.HTTPMethod : Swift.RawRepresentable {}

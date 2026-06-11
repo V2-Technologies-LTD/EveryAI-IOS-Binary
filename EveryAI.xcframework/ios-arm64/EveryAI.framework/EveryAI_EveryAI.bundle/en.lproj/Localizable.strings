@@ -1,0 +1,102 @@
+/* App */
+"app_name" = "EveryAI";
+"every_ai_chat" = "EVERYAI Chat";
+
+/* ChatInputBox */
+"composer_hint" = "Start a new message...";
+"action_upload_file" = "Upload File";
+"action_upload_image" = "Upload Image";
+"action_create_image" = "Create Image";
+"error_max_file_selection" = "You have reached maximum file selection";
+"error_max_file_exceeded" = "Maximum file exceeded";
+"error_image_gen_unavailable" = "Image generation model not available";
+"label_image_upload" = "Image Upload";
+"label_file_upload" = "File Upload";
+"toast_internet_not_available" = "Internet is not available!";
+"toast_model_not_available" = "Model is not available now";
+"toast_please_type_something" = "Please type or add something";
+
+/* ChatHistory */
+"upload_failed_title" = "Upload Failed";
+"upload_failed_want_retry" = "Want to retry?";
+"btn_retry" = "Retry";
+"btn_cancel" = "Cancel";
+"toast_copied_to_clipboard" = "Copied to clipboard";
+"ai_thinking" = "EVERYAI is thinking ...";
+"empty_chat_greeting" = "Hi! How's everything going with you?";
+"image_downloaded_successfully" = "Image downloaded successfully";
+"toast_permission_denied" = "Permission denied";
+"error_image_url_invalid" = "Image URL is invalid.";
+
+/* AppDrawer */
+"drawer_title" = "EVERYAI CHAT AI";
+"btn_new_chat" = "New chat";
+"label_recent_chat" = "Recent chat";
+"label_no_recent_chats" = "No recent chats";
+"dialog_rename_chat_title" = "Rename Chat";
+"btn_save" = "Save";
+"dialog_delete_chat_title" = "Delete Chat";
+"delete_chat_cannot_undo" = "This can't be undone.";
+"btn_no" = "No";
+"btn_delete" = "Delete";
+"label_rename" = "Rename";
+"label_delete" = "Delete";
+"label_light_mode" = "Light mode";
+"label_dark_mode" = "Dark mode";
+"language" = "Language";
+"title_new_chat" = "New Chat";
+
+/* EveryAIModelBottomSheet */
+"model_picker_title" = "Select AI Model";
+"search_models_hint" = "Search Models";
+"model_switching_note" = "Switching AI models may lead to different token charges";
+"no_model_available" = "No Model available";
+"toast_select_parent_model" = "Please select a parent model";
+"toast_select_child_model" = "Please select a child model";
+"btn_apply" = "Apply";
+"btn_reset" = "Reset";
+
+/* EveryAIBundleBottomSheet */
+"bundle_title" = "EVERYAI Premium";
+"bundle_subtitle" = "Get more access with advanced intelligence and agents.";
+"no_internet_available_message" = "No internet connection is available. Please check your network settings and try again.";
+
+/* TokenDetailSheet */
+"token_details_title" = "Token Details";
+"token_prompt_used" = "Prompt Token Used";
+"token_response_used" = "Responds Token Used";
+"token_total_used" = "Total Token Used";
+"token_time_used" = "Time Used";
+"token_credits_note" = "Credits usage is estimated. To see the exact credits used for each model and conversation, visit the ";
+"token_terms_link" = "Terms & Conditions";
+"token_terms_suffix" = " page.";
+
+/* EveryAIAiScreen */
+"toast_token_limit_reached" = "Token limit reached. You cannot change the model right now.";
+
+/* PurchaseHistory */
+"history_screen_title" = "Token History";
+"purchase_history_empty" = "No items here yet";
+"label_total_token" = "Total Token";
+"label_token_left" = "Token Left";
+"label_current_plan" = "CURRENT SUBSCRIPTION PLAN";
+"label_purchase_history" = "Purchase History";
+
+/* RetryDialog */
+"retry_dialog_title" = "Retry";
+"btn_try_again_later" = "Try Again Later";
+
+/* FileSuccessDialog */
+"btn_close" = "Close";
+
+/* iOS-only keys (no Android equivalent) */
+"btn_ok" = "OK";
+"alert_limit_reached_title" = "Limit reached";
+"alert_attachment_limit_title" = "Attachment limit";
+"alert_download_title" = "Download";
+"rename_placeholder" = "Enter name...";
+"label_free" = "Free ";
+"label_days" = " days";
+"get_package_format" = "Get %@";
+"label_validity_till" = "Validity till - ";
+"label_token_unit" = " token";
