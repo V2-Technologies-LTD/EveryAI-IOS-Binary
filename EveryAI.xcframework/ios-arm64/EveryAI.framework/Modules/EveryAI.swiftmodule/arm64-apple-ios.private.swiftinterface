@@ -152,11 +152,6 @@ extension EveryAI.EveryAIManager {
   @_Concurrency.MainActor final public func view(_ view: EveryAI.EveryAIView) -> some SwiftUICore.View
   
 }
-final public class EveryAITokenGenerator : EveryAI.EveryAITokenHandler {
-  public init()
-  final public func didReceiveTokenError() async throws -> Swift.String
-  @objc deinit
-}
 public struct ServiceErrorData : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws

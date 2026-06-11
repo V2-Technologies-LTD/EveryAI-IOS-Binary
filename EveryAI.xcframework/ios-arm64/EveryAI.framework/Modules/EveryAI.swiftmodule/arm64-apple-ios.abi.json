@@ -3501,98 +3501,6 @@
       },
       {
         "kind": "Import",
-        "name": "OSLog",
-        "printedName": "OSLog",
-        "declKind": "Import",
-        "moduleName": "EveryAI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "EveryAITokenGenerator",
-        "printedName": "EveryAITokenGenerator",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "EveryAITokenGenerator",
-                "printedName": "EveryAI.EveryAITokenGenerator",
-                "usr": "s:7EveryAI0A16AITokenGeneratorC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7EveryAI0A16AITokenGeneratorCACycfc",
-            "mangledName": "$s7EveryAI0A16AITokenGeneratorCACycfc",
-            "moduleName": "EveryAI",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "didReceiveTokenError",
-            "printedName": "didReceiveTokenError()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7EveryAI0A16AITokenGeneratorC20didReceiveTokenErrorSSyYaKF",
-            "mangledName": "$s7EveryAI0A16AITokenGeneratorC20didReceiveTokenErrorSSyYaKF",
-            "moduleName": "EveryAI",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:7EveryAI0A16AITokenGeneratorC",
-        "mangledName": "$s7EveryAI0A16AITokenGeneratorC",
-        "moduleName": "EveryAI",
-        "declAttributes": [
-          "Final",
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "EveryAITokenHandler",
-            "printedName": "EveryAITokenHandler",
-            "usr": "s:7EveryAI0A14AITokenHandlerP",
-            "mangledName": "$s7EveryAI0A14AITokenHandlerP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -7819,56 +7727,56 @@
     {
       "filePath": "\/Users\/macbook\/Projects\/V2\/Robi-AI\/Robi-AI-IOS\/Sources\/EveryAI\/EveryAI\/Helpers\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 1698,
+      "offset": 1573,
       "length": 13,
       "value": "\"\u001B[0m\""
     },
     {
       "filePath": "\/Users\/macbook\/Projects\/V2\/Robi-AI\/Robi-AI-IOS\/Sources\/EveryAI\/EveryAI\/Helpers\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 1740,
+      "offset": 1615,
       "length": 16,
       "value": "\"\u001B[0;31m\""
     },
     {
       "filePath": "\/Users\/macbook\/Projects\/V2\/Robi-AI\/Robi-AI-IOS\/Sources\/EveryAI\/EveryAI\/Helpers\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 1785,
+      "offset": 1660,
       "length": 16,
       "value": "\"\u001B[0;32m\""
     },
     {
       "filePath": "\/Users\/macbook\/Projects\/V2\/Robi-AI\/Robi-AI-IOS\/Sources\/EveryAI\/EveryAI\/Helpers\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 1830,
+      "offset": 1705,
       "length": 16,
       "value": "\"\u001B[0;33m\""
     },
     {
       "filePath": "\/Users\/macbook\/Projects\/V2\/Robi-AI\/Robi-AI-IOS\/Sources\/EveryAI\/EveryAI\/Helpers\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 1875,
+      "offset": 1750,
       "length": 16,
       "value": "\"\u001B[0;34m\""
     },
     {
       "filePath": "\/Users\/macbook\/Projects\/V2\/Robi-AI\/Robi-AI-IOS\/Sources\/EveryAI\/EveryAI\/Helpers\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 1920,
+      "offset": 1795,
       "length": 16,
       "value": "\"\u001B[0;35m\""
     },
     {
       "filePath": "\/Users\/macbook\/Projects\/V2\/Robi-AI\/Robi-AI-IOS\/Sources\/EveryAI\/EveryAI\/Helpers\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 1965,
+      "offset": 1840,
       "length": 16,
       "value": "\"\u001B[0;36m\""
     },
     {
       "filePath": "\/Users\/macbook\/Projects\/V2\/Robi-AI\/Robi-AI-IOS\/Sources\/EveryAI\/EveryAI\/Helpers\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 2010,
+      "offset": 1885,
       "length": 16,
       "value": "\"\u001B[0;90m\""
     },
